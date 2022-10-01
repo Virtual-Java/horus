@@ -1,0 +1,9 @@
+[submodule "build/archlinux/horus-futurize"]
+	path = build/archlinux/horus-futurize
+	url = https://github.com/Virtual-Java/horus-python3
+[submodule "build/archlinux/horus2"]
+	path = build/archlinux/horus2
+	url = https://github.com/Virtual-Java/horus-python2
+[submodule "build/build/archlinux/horus-futurize"]
+	path = build/build/archlinux/horus-futurize
+	url = https://github.com/Virtual-Java/horus-python3
