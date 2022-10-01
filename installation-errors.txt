@@ -1,0 +1,6 @@
+https://askubuntu.com/questions/1376631/ppa-install-old-version
+
+
+
+#try to download manually:
+wget deb-src https://ppa.launchpadcontent.net/bqlabs/horus-dev/ubuntu xenial main

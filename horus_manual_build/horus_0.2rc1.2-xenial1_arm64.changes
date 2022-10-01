@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Fri, 20 May 2016 00:00:00 +0100
+Source: horus
+Binary: horus
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0.2rc1.2-xenial1
+Distribution: xenial
+Urgency: medium
+Maintainer: Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+Changed-By: Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+Description:
+ horus      - Horus is a full software solution for 3D scanning
+Changes:
+ horus (0.2rc1.2-xenial1) xenial; urgency=medium
+ .
+   * Release candidate 1
+Checksums-Sha1:
+ 39775726859347a74885bdb51f49c350f091d024 6091 horus_0.2rc1.2-xenial1_arm64.buildinfo
+ dd08e07780f9a6bcdc62c354feebb546385c946b 1398 horus_0.2rc1.2-xenial1_arm64.deb
+Checksums-Sha256:
+ da733c3be213a7afda81161ba3dc548272c42d97a522ac358d931b017233c4b5 6091 horus_0.2rc1.2-xenial1_arm64.buildinfo
+ 87c8042489af9e43453d6799f48ac265b3c3f311bb8983447e6d8b1c9b9fee18 1398 horus_0.2rc1.2-xenial1_arm64.deb
+Files:
+ 4edae9ae90c1589e2baa657baceb44ac 6091 misc optional horus_0.2rc1.2-xenial1_arm64.buildinfo
+ 14f72c2273271cd86d8faf4650fb5278 1398 misc optional horus_0.2rc1.2-xenial1_arm64.deb

@@ -1,0 +1,538 @@
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ apt source -t xenial --build horus
+Reading package lists... Done
+Selected version '0.2rc1.2-xenial1' (xenial) for horus
+Need to get 25.4 MB of source archives.
+Get:1 https://ppa.launchpadcontent.net/bqlabs/horus-dev/ubuntu xenial/main horus 0.2rc1.2-xenial1 (tar) [25.4 MB]
+Get:2 https://ppa.launchpadcontent.net/bqlabs/horus-dev/ubuntu xenial/main horus 0.2rc1.2-xenial1 (diff) [1347 B]
+Get:3 https://ppa.launchpadcontent.net/bqlabs/horus-dev/ubuntu xenial/main horus 0.2rc1.2-xenial1 (dsc) [1387 B]
+Fetched 25.4 MB in 10s (2577 kB/s)                                                          
+dpkg-source: info: extracting horus in horus-0.2rc1.2
+dpkg-source: info: unpacking horus_0.2rc1.2.orig.tar.gz
+dpkg-source: info: unpacking horus_0.2rc1.2-xenial1.debian.tar.gz
+dpkg-buildpackage: info: source package horus
+dpkg-buildpackage: info: source version 0.2rc1.2-xenial1
+dpkg-buildpackage: info: source distribution xenial
+dpkg-buildpackage: info: source changed by Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+dpkg-buildpackage: info: host architecture arm64
+ dpkg-source --before-build .
+dpkg-source: info: using options from horus-0.2rc1.2/debian/source/options: --extend-diff-ignore=\.egg-info
+dpkg-checkbuilddeps: error: Unmet build dependencies: python-setuptools (>= 0.6b3) python-all (>= 2.6.6-3) debhelper (>= 7.4.3)
+dpkg-buildpackage: warning: build dependencies/conflicts unsatisfied; aborting
+dpkg-buildpackage: warning: (Use -d flag to override.)
+E: Build command 'cd horus-0.2rc1.2 && dpkg-buildpackage -b -uc' failed.
+
+
+
+sudo apt install python-all
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib python2 python2-minimal
+  python2.7 python2.7-minimal
+Suggested packages:
+  python2-doc python-tk python2.7-doc binfmt-support
+The following NEW packages will be installed:
+  libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib python-all python2
+  python2-minimal python2.7 python2.7-minimal
+0 upgraded, 8 newly installed, 0 to remove and 0 not upgraded.
+Need to get 4011 kB of archives.
+After this operation, 16.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y 
+Get:1 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 libpython2.7-minimal arm64 2.7.18-13ubuntu1.1 [347 kB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python2.7-minimal arm64 2.7.18-13ubuntu1.1 [1394 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 python2-minimal arm64 2.7.18-3 [20.8 kB]
+Get:4 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 libpython2.7-stdlib arm64 2.7.18-13ubuntu1.1 [1982 kB]
+Get:5 http://ports.ubuntu.com/ubuntu-ports jammy-updates/universe arm64 python2.7 arm64 2.7.18-13ubuntu1.1 [250 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 libpython2-stdlib arm64 2.7.18-3 [7432 B]
+Get:7 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 python2 arm64 2.7.18-3 [9098 B]
+Get:8 http://ports.ubuntu.com/ubuntu-ports jammy/universe arm64 python-all arm64 2.7.18-3 [902 B]
+Fetched 4011 kB in 1s (3941 kB/s)  
+Selecting previously unselected package libpython2.7-minimal:arm64.
+(Reading database ... 115600 files and directories currently installed.)
+Preparing to unpack .../0-libpython2.7-minimal_2.7.18-13ubuntu1.1_arm64.deb ...
+Unpacking libpython2.7-minimal:arm64 (2.7.18-13ubuntu1.1) ...
+Selecting previously unselected package python2.7-minimal.
+Preparing to unpack .../1-python2.7-minimal_2.7.18-13ubuntu1.1_arm64.deb ...
+Unpacking python2.7-minimal (2.7.18-13ubuntu1.1) ...
+Selecting previously unselected package python2-minimal.
+Preparing to unpack .../2-python2-minimal_2.7.18-3_arm64.deb ...
+Unpacking python2-minimal (2.7.18-3) ...
+Selecting previously unselected package libpython2.7-stdlib:arm64.
+Preparing to unpack .../3-libpython2.7-stdlib_2.7.18-13ubuntu1.1_arm64.deb ...
+Unpacking libpython2.7-stdlib:arm64 (2.7.18-13ubuntu1.1) ...
+Selecting previously unselected package python2.7.
+Preparing to unpack .../4-python2.7_2.7.18-13ubuntu1.1_arm64.deb ...
+Unpacking python2.7 (2.7.18-13ubuntu1.1) ...
+Selecting previously unselected package libpython2-stdlib:arm64.
+Preparing to unpack .../5-libpython2-stdlib_2.7.18-3_arm64.deb ...
+Unpacking libpython2-stdlib:arm64 (2.7.18-3) ...
+Setting up libpython2.7-minimal:arm64 (2.7.18-13ubuntu1.1) ...
+Setting up python2.7-minimal (2.7.18-13ubuntu1.1) ...
+Linking and byte-compiling packages for runtime python2.7...
+Setting up python2-minimal (2.7.18-3) ...
+Selecting previously unselected package python2.
+(Reading database ... 116343 files and directories currently installed.)
+Preparing to unpack .../python2_2.7.18-3_arm64.deb ...
+Unpacking python2 (2.7.18-3) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../python-all_2.7.18-3_arm64.deb ...
+Unpacking python-all (2.7.18-3) ...
+Setting up libpython2.7-stdlib:arm64 (2.7.18-13ubuntu1.1) ...
+Setting up python2.7 (2.7.18-13ubuntu1.1) ...
+Setting up libpython2-stdlib:arm64 (2.7.18-3) ...
+Setting up python2 (2.7.18-3) ...
+Setting up python-all (2.7.18-3) ...
+Processing triggers for man-db (2.10.2-1) ...
+Error: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PackageKit was not provided by any .service files
+Scanning processes...                                                                        
+Scanning processor microcode...                                                              
+Scanning linux images...                                                                     
+
+Failed to check for processor microcode upgrades.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+
+
+
+
+
+
+
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ apt source -t xenial --build horus
+Reading package lists... Done
+Selected version '0.2rc1.2-xenial1' (xenial) for horus
+Skipping already downloaded file 'horus_0.2rc1.2.orig.tar.gz'
+Skipping already downloaded file 'horus_0.2rc1.2-xenial1.debian.tar.gz'
+Skipping already downloaded file 'horus_0.2rc1.2-xenial1.dsc'
+Need to get 0 B of source archives.
+Skipping unpack of already unpacked source in horus-0.2rc1.2
+dpkg-buildpackage: info: source package horus
+dpkg-buildpackage: info: source version 0.2rc1.2-xenial1
+dpkg-buildpackage: info: source distribution xenial
+dpkg-buildpackage: info: source changed by Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+dpkg-buildpackage: info: host architecture arm64
+ dpkg-source --before-build .
+dpkg-source: info: using options from horus-0.2rc1.2/debian/source/options: --extend-diff-ignore=\.egg-info
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=python_distutils
+dh: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh: error: unable to load addon python2: Can't locate Debian/Debhelper/Sequence/python2.pm in @INC (you may need to install the Debian::Debhelper::Sequence::python2 module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/aarch64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at (eval 4) line 1.
+BEGIN failed--compilation aborted at (eval 4) line 1.
+
+make: *** [debian/rules:7: clean] Error 255
+dpkg-buildpackage: error: fakeroot debian/rules clean subprocess returned exit status 2
+E: Build command 'cd horus-0.2rc1.2 && dpkg-buildpackage -b -uc' failed.
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ ls
+horus-0.2rc1.2                        horus_0.2rc1.2-xenial1.dsc
+horus_0.2rc1.2-xenial1.debian.tar.gz  horus_0.2rc1.2.orig.tar.gz
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ cd horus-0.2rc1.2/
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build/horus-0.2rc1.2$ dpkg-buildpackage -b -uc
+dpkg-buildpackage: info: source package horus
+dpkg-buildpackage: info: source version 0.2rc1.2-xenial1
+dpkg-buildpackage: info: source distribution xenial
+dpkg-buildpackage: info: source changed by Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+dpkg-buildpackage: info: host architecture arm64
+ dpkg-source --before-build .
+dpkg-source: info: using options from horus-0.2rc1.2/debian/source/options: --extend-diff-ignore=\.egg-info
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=python_distutils
+dh: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh: error: unable to load addon python2: Can't locate Debian/Debhelper/Sequence/python2.pm in @INC (you may need to install the Debian::Debhelper::Sequence::python2 module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/aarch64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at (eval 4) line 1.
+BEGIN failed--compilation aborted at (eval 4) line 1.
+
+make: *** [debian/rules:7: clean] Error 255
+dpkg-buildpackage: error: fakeroot debian/rules clean subprocess returned exit status 2
+
+
+
+
+
+
+
+
+Working:
+
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ apt source -t xenial --build horus
+Reading package lists... Done
+Selected version '0.2rc1.2-xenial1' (xenial) for horus
+Skipping already downloaded file 'horus_0.2rc1.2.orig.tar.gz'
+Skipping already downloaded file 'horus_0.2rc1.2-xenial1.debian.tar.gz'
+Skipping already downloaded file 'horus_0.2rc1.2-xenial1.dsc'
+Need to get 0 B of source archives.
+Skipping unpack of already unpacked source in horus-0.2rc1.2
+dpkg-buildpackage: info: source package horus
+dpkg-buildpackage: info: source version 0.2rc1.2-xenial1
+dpkg-buildpackage: info: source distribution xenial
+dpkg-buildpackage: info: source changed by Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+dpkg-buildpackage: info: host architecture arm64
+ dpkg-source --before-build .
+dpkg-source: info: using options from horus-0.2rc1.2/debian/source/options: --extend-diff-ignore=\.egg-info
+ fakeroot debian/rules clean
+dh clean --with python2 --buildsystem=python_distutils
+dh: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_auto_clean -O--buildsystem=python_distutils
+dh_auto_clean: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh_auto_clean: warning: Please use the third-party "pybuild" build system instead of python-distutils
+dh_auto_clean: warning: This feature will be removed in compat 12.
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+	find . -name \*.pyc -exec rm {} \+
+   dh_clean -O--buildsystem=python_distutils
+dh_clean: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+ debian/rules build
+dh build --with python2 --buildsystem=python_distutils
+dh: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_update_autotools_config -O--buildsystem=python_distutils
+   dh_auto_configure -O--buildsystem=python_distutils
+dh_auto_configure: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh_auto_configure: warning: Please use the third-party "pybuild" build system instead of python-distutils
+dh_auto_configure: warning: This feature will be removed in compat 12.
+   dh_auto_build -O--buildsystem=python_distutils
+dh_auto_build: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh_auto_build: warning: Please use the third-party "pybuild" build system instead of python-distutils
+dh_auto_build: warning: This feature will be removed in compat 12.
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+   dh_auto_test -O--buildsystem=python_distutils
+dh_auto_test: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh_auto_test: warning: Please use the third-party "pybuild" build system instead of python-distutils
+dh_auto_test: warning: This feature will be removed in compat 12.
+ fakeroot debian/rules binary
+dh binary --with python2 --buildsystem=python_distutils
+dh: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_testroot -O--buildsystem=python_distutils
+   dh_prep -O--buildsystem=python_distutils
+   dh_auto_install --destdir=debian/horus/ -O--buildsystem=python_distutils
+dh_auto_install: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+dh_auto_install: warning: Please use the third-party "pybuild" build system instead of python-distutils
+dh_auto_install: warning: This feature will be removed in compat 12.
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+pyversions: missing debian/pyversions file, fall back to supported versions
+   dh_installdocs -O--buildsystem=python_distutils
+dh_installdocs: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_installchangelogs -O--buildsystem=python_distutils
+   dh_python2 -O--buildsystem=python_distutils
+   dh_installinit -O--buildsystem=python_distutils
+dh_installinit: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_perl -O--buildsystem=python_distutils
+   dh_link -O--buildsystem=python_distutils
+   dh_strip_nondeterminism -O--buildsystem=python_distutils
+   dh_compress -O--buildsystem=python_distutils
+dh_compress: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_fixperms -O--buildsystem=python_distutils
+   dh_missing -O--buildsystem=python_distutils
+dh_missing: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_strip -O--buildsystem=python_distutils
+dh_strip: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_makeshlibs -O--buildsystem=python_distutils
+   dh_shlibdeps -O--buildsystem=python_distutils
+dh_shlibdeps: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_installdeb -O--buildsystem=python_distutils
+dh_installdeb: warning: Compatibility levels before 10 are deprecated (level 7 in use)
+   dh_gencontrol -O--buildsystem=python_distutils
+dpkg-gencontrol: warning: Depends field of package horus: substitution variable ${python:Depends} used, but is not defined
+   dh_md5sums -O--buildsystem=python_distutils
+   dh_builddeb -O--buildsystem=python_distutils
+dpkg-deb: building package 'horus' in '../horus_0.2rc1.2-xenial1_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../horus_0.2rc1.2-xenial1_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../horus_0.2rc1.2-xenial1_arm64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from horus-0.2rc1.2/debian/source/options: --extend-diff-ignore=\.egg-info
+dpkg-buildpackage: info: binary-only upload (no source included)
+
+
+
+
+
+
+
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo dpkg -i *.deb
+Selecting previously unselected package horus.
+(Reading database ... 117555 files and directories currently installed.)
+Preparing to unpack horus_0.2rc1.2-xenial1_arm64.deb ...
+Unpacking horus (0.2rc1.2-xenial1) ...
+dpkg: dependency problems prevent configuration of horus:
+ horus depends on python; however:
+  Package python is not installed.
+ horus depends on python-serial; however:
+  Package python-serial is not installed.
+ horus depends on python-wxgtk2.8 | python-wxgtk3.0; however:
+  Package python-wxgtk2.8 is not installed.
+  Package python-wxgtk3.0 is not installed.
+ horus depends on python-opengl; however:
+  Package python-opengl is not installed.
+ horus depends on python-pyglet; however:
+  Package python-pyglet is not installed.
+ horus depends on python-numpy; however:
+  Package python-numpy is not installed.
+ horus depends on python-scipy; however:
+  Package python-scipy is not installed.
+ horus depends on python-matplotlib; however:
+  Package python-matplotlib is not installed.
+ horus depends on python-opencv; however:
+  Package python-opencv is not installed.
+ horus depends on avrdude; however:
+  Package avrdude is not installed.
+ horus depends on libftdi1; however:
+  Package libftdi1 is not installed.
+ horus depends on v4l-utils; however:
+  Package v4l-utils is not installed.
+
+dpkg: error processing package horus (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ horus
+
+
+
+
+
+
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo apt install python-serial python-wxgtk3.0 python-opengl python-pyglet python-numpy python-scipy python-matplotlib python-opencv avrdude libftdi1 v4l-utils
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package python-scipy is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-matplotlib is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-serial is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-wxgtk3.0 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-opengl is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-pyglet is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-numpy is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Package python-opencv is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'python-serial' has no installation candidate
+E: Package 'python-wxgtk3.0' has no installation candidate
+E: Package 'python-opengl' has no installation candidate
+E: Package 'python-pyglet' has no installation candidate
+E: Package 'python-numpy' has no installation candidate
+E: Package 'python-scipy' has no installation candidate
+E: Package 'python-matplotlib' has no installation candidate
+E: Package 'python-opencv' has no installation candidate
+
+
+
+
+virtualenv -p /usr/bin/python2 virenv
+Command 'virtualenv' not found, but can be installed with:
+apt install python3-virtualenv
+Please ask your administrator.
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo apt install python3-virtualenv
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ horus : Depends: python but it is not installable
+         Depends: python-serial but it is not installable
+         Depends: python-wxgtk2.8 but it is not installable or
+                  python-wxgtk3.0 but it is not installable
+         Depends: python-opengl but it is not installable
+         Depends: python-pyglet but it is not installable
+         Depends: python-numpy but it is not installable
+         Depends: python-scipy but it is not installable
+         Depends: python-matplotlib but it is not installable
+         Depends: python-opencv but it is not installable
+         Depends: avrdude but it is not going to be installed
+         Depends: libftdi1 but it is not going to be installed
+         Depends: v4l-utils but it is not going to be installed
+ python3-virtualenv : Depends: python3-wheel-whl but it is not going to be installed
+                      Depends: python3-distlib (>= 0.3.1) but it is not going to be installed
+                      Depends: python3-filelock but it is not going to be installed
+                      Depends: python3-platformdirs (< 3) but it is not going to be installed
+                      Depends: python3-platformdirs (>= 2) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo apt --fix-broken install
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Correcting dependencies... Done
+The following packages will be REMOVED:
+  horus
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+1 not fully installed or removed.
+After this operation, 9216 B disk space will be freed.
+Do you want to continue? [Y/n] n
+Abort.
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ horus
+horus: command not found
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo apt --fix-broken install
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Correcting dependencies... Done
+The following packages will be REMOVED:
+  horus
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+1 not fully installed or removed.
+After this operation, 9216 B disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 117557 files and directories currently installed.)
+Removing horus (0.2rc1.2-xenial1) ...
+Error: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.PackageKit was not provided by any .service files
+needrestart is being skipped since dpkg has failed
+pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ 
+
+
+Repack to solve "python" dependency issue:
+https://github.com/atom/atom/issues/20356
+
+I found another solution to install atom on Ubuntu 20.04
+
+With dpkg you can repack an existing deb package. This way you don't have to mess with downgrading packages.
+
+dpkg -x atom-amd64.deb atom-src
+dpkg -e atom-amd64.deb atom-src/DEBIAN
+# Modify python dependency in atom-src/DEBIAN/control (from python to python | python2
+dpkg -b atom-src/ new-atom-amd64.deb
+sudo dpkg -i new-atom-amd64.deb
+
+
+
+
+# Recreate debian package:
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano ../*log
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -x 
+horus-0.2rc1.2/                   virenv/
+horus_0.2rc1.2-xenial1_arm64.deb  
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -x horus_0.2rc1.2-xenial1_arm64.deb horus-0.2rc1.2
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -e horus-0.2rc1.2/
+.pc/    debian/ doc/    pkg/    res/    src/    test/   usr/    
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -e horus-0.2rc1.2/
+.pc/    debian/ doc/    pkg/    res/    src/    test/   usr/    
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -e horus-0.2rc1.2/debian
+dpkg-deb: error: error reading archive magic version number from file horus-0.2rc1.2/debian: Is a directory
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -e horus_0.2rc1.2-xenial1_arm64.deb horus-0.2rc1.2/debian
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus_0.2rc1.2
+horus_0.2rc1.2-xenial1.debian.tar.gz    horus_0.2rc1.2-xenial1_arm64.changes
+horus_0.2rc1.2-xenial1.dsc              horus_0.2rc1.2-xenial1_arm64.deb
+horus_0.2rc1.2-xenial1_arm64.buildinfo  horus_0.2rc1.2.orig.tar.gz
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/c
+changelog         changelog.backup  compat            control           
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/c
+changelog         changelog.backup  compat            control           
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/control 
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ ls
+horus-0.2rc1.2                          horus_0.2rc1.2-xenial1_arm64.changes
+horus_0.2rc1.2-xenial1.debian.tar.gz    horus_0.2rc1.2-xenial1_arm64.deb
+horus_0.2rc1.2-xenial1.dsc              horus_0.2rc1.2.orig.tar.gz
+horus_0.2rc1.2-xenial1_arm64.buildinfo  virenv
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -p horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-query: package 'horus-0.2rc1.2' is not available
+
+dpkg-query: package 'new_horus_0.2rc1.2-xenial1_arm64.deb' is not available
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ ls horus-0.2rc1.2/
+.gitignore     LICENSE        PC1.ply        doc/           pkg/           src/
+.pc/           PC0-final.ply  README.md      horus          res/           test/
+.travis.yml    PC0.ply        all.ply        horus.log      setup.py       usr/
+CHANGELOG      PC1-final.ply  debian/        package.sh     setup_mac.py   
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -p horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-query: package 'horus-0.2rc1.2' is not available
+
+dpkg-query: package 'new_horus_0.2rc1.2-xenial1_arm64.deb' is not available
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ ls
+horus-0.2rc1.2                          horus_0.2rc1.2-xenial1_arm64.changes
+horus_0.2rc1.2-xenial1.debian.tar.gz    horus_0.2rc1.2-xenial1_arm64.deb
+horus_0.2rc1.2-xenial1.dsc              horus_0.2rc1.2.orig.tar.gz
+horus_0.2rc1.2-xenial1_arm64.buildinfo  virenv
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -b horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-deb: error: failed to open package info file 'horus-0.2rc1.2/DEBIAN/control' for reading: No such file or directory
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/
+.debhelper/          control              horus.substvars      rules
+changelog            files                md5sums              source/
+changelog.backup     horus/               postinst             
+compat               horus.debhelper.log  postrm               
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/
+.debhelper/          control              horus.substvars      rules
+changelog            files                md5sums              source/
+changelog.backup     horus/               postinst             
+compat               horus.debhelper.log  postrm               
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ nano horus-0.2rc1.2/debian/c
+changelog         changelog.backup  compat            control           
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ cd horus-0.2rc1.2
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build/horus-0.2rc1.2$ ln -s debian DEBIAN
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build/horus-0.2rc1.2$ cd ..
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -b horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-deb: building package 'horus' in 'new_horus_0.2rc1.2-xenial1_arm64.deb'.
+dpkg-deb: error: treewalk root horus-0.2rc1.2/DEBIAN is not a directory
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ rm horus-0.2rc1.2/DEBIAN
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ mkdir horus-0.2rc1.2/DEBIAN
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ cd horus-0.2rc1.2/DEBIAN
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build/horus-0.2rc1.2/DEBIAN$ ln -s ../debian/control ./
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build/horus-0.2rc1.2/DEBIAN$ cd ../..
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -b horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-deb: building package 'horus' in 'new_horus_0.2rc1.2-xenial1_arm64.deb'.
+
+
+
+
+
+
+
+
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ dpkg -b horus-0.2rc1.2 new_horus_0.2rc1.2-xenial1_arm64.deb
+dpkg-deb: building package 'horus' in 'new_horus_0.2rc1.2-xenial1_arm64.deb'.
+(virenv) pi@heron:~/3D-scanner/bqlabs/horus/horus_manual_build$ sudo dpkg -i new*.deb
+(Reading database ... 117923 files and directories currently installed.)
+Preparing to unpack new_horus_0.2rc1.2-xenial1_arm64.deb ...
+Unpacking horus (0.2rc1.2-xenial1) over (0.2rc1.2-xenial1) ...
+dpkg: dependency problems prevent configuration of horus:
+ horus depends on python-serial; however:
+  Package python-serial is not installed.
+ horus depends on python-wxgtk2.8 | python-wxgtk3.0; however:
+  Package python-wxgtk2.8 is not installed.
+  Package python-wxgtk3.0 is not installed.
+ horus depends on python-opengl; however:
+  Package python-opengl is not installed.
+ horus depends on python-pyglet; however:
+  Package python-pyglet is not installed.
+ horus depends on python-numpy; however:
+  Package python-numpy is not installed.
+ horus depends on python-scipy; however:
+  Package python-scipy is not installed.
+ horus depends on python-matplotlib; however:
+  Package python-matplotlib is not installed.
+ horus depends on python-opencv; however:
+  Package python-opencv is not installed.
+ horus depends on avrdude; however:
+  Package avrdude is not installed.
+ horus depends on libftdi1; however:
+  Package libftdi1 is not installed.
+ horus depends on v4l-utils; however:
+  Package v4l-utils is not installed.
+
+dpkg: error processing package horus (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ horus

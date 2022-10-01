@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Wizard &mdash; Horus 0.2 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Horus 0.2 documentation" href="../index.html"/>
+        <link rel="up" title="Guía rápida" href="index.html"/>
+        <link rel="next" title="Escaneado" href="escaneado.html"/>
+        <link rel="prev" title="Introducción" href="introduccion.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Horus
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guía rápida</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduccion.html">Introducción</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Wizard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ventana-de-conexion">Ventana de conexión</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ventana-de-calibracion">Ventana de calibración</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ventana-de-escaneo">Ventana de escaneo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="escaneado.html">Escaneado</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../bancos-de-trabajo/index.html">Bancos de trabajo</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Horus</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Guía rápida</a> &raquo;</li>
+      
+    <li>Wizard</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/guia-rapida/wizard.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="wizard">
+<span id="sec-wizard"></span><h1>Wizard<a class="headerlink" href="#wizard" title="Permalink to this headline">¶</a></h1>
+<p>Al abrir por primera vez Horus, aparece una ventana de bienvenida. Esta ventana tiene dos partes:</p>
+<ul class="simple">
+<li>Crear nuevo: permite lanzar el Wizard o cada uno de los bancos de trabajo.</li>
+<li>Abrir reciente: proporciona un acceso directo a los modelos (ply o stl) abiertos o creados anteriormente.</li>
+</ul>
+<div class="figure">
+<img alt="../_images/welcome1.png" src="../_images/welcome1.png" />
+</div>
+<p>Pulsando sobre &#8220;Wizard&#8221; se abre el menú interactivo en el que se configura el escáner paso a paso.</p>
+<div class="section" id="ventana-de-conexion">
+<h2>Ventana de conexión<a class="headerlink" href="#ventana-de-conexion" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se realiza la conexión del escáner, el ajuste de la luminosidad y el proceso de autocomprobación.</p>
+<div class="figure">
+<img alt="../_images/wizard-connection1.png" src="../_images/wizard-connection1.png" />
+</div>
+<ul class="simple">
+<li>Conectar: conecta la cámara y la electrónica de Ciclop. Si no encuentra alguno de los dispositivos se genera una notificación informativa.</li>
+<li>Editar ajustes: este botón despliega una ventana en la que se puede ajustar la exposición de la cámara en función de la luminosidad de la escena. Una luminosidad alta implica una menor exposición en la cámara y viceversa.</li>
+<li>Auto-comprobación: para realizar este proceso es necesario colocar el patrón correctamente sobre la plataforma, como indica la figura. Este proceso realiza una vuelta completa de la plataforma determinando:<ul>
+<li>Detección del patrón: indica si el patrón no se ha detectado correctamente por problemas de luminosidad o brillo.</li>
+<li>Dirección del motor: detecta si el motor ha sido conectado al revés e indica cómo corregirlo.</li>
+<li>Detección de los láseres: detecta si los láserses han sido conectados correctamente y están operativos.</li>
+</ul>
+</li>
+</ul>
+<div class="figure">
+<img alt="../_images/wizard-autocheck1.png" src="../_images/wizard-autocheck1.png" />
+</div>
+<p><strong>Nota</strong>: la primera vez que se pulsa auto-comprobación, indica si se desean alinear los láseres. Esto es para modificar manualmente la orientación de los láseres hasta que emitan una línea perpendicular a la plataforma.</p>
+</div>
+<div class="section" id="ventana-de-calibracion">
+<h2>Ventana de calibración<a class="headerlink" href="#ventana-de-calibracion" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se realiza de forma conjunta la calibración de los láseres y la plataforma giratoria.</p>
+<div class="figure">
+<img alt="../_images/wizard-calibration1.png" src="../_images/wizard-calibration1.png" />
+</div>
+<p>Esta calibración determina automáticamente los planos en el espacio de cada uno de los láseres con respecto a la cámara, así como la relación espacial entre la plataforma giratoria y el centro óptico de la cámara.</p>
+<p>La primera vez se ejecuta el proceso de calibración, hay que introducir la &#8220;Distancia al origen del patrón&#8221;, como se indica en la imagen. Esta distancia es fundamental para la calibración de la plataforma, ya que indica la relación entre la posición de la pegatina del patrón y la base.</p>
+<div class="figure">
+<img alt="../_images/pattern-origin-distance1.png" src="../_images/pattern-origin-distance1.png" />
+</div>
+</div>
+<div class="section" id="ventana-de-escaneo">
+<h2>Ventana de escaneo<a class="headerlink" href="#ventana-de-escaneo" title="Permalink to this headline">¶</a></h2>
+<p>En esta ventana se ajustan los parámetros de escaneo:</p>
+<ul class="simple">
+<li>Resolución: está relacionada con el número de pasos por vuelta del motor.<ul>
+<li>Alta: 800 pasos (0.45º)</li>
+<li>Media: 400 pasos (0.9º)</li>
+<li>Baja: 200 pasos (1.8º)</li>
+</ul>
+</li>
+<li>Laser: se selecciona el láser izquierdo, derecho o ambos.</li>
+</ul>
+<div class="figure">
+<img alt="../_images/wizard-scanning1.png" src="../_images/wizard-scanning1.png" />
+</div>
+<p>Al completar el Wizard se accede a la ventana principal.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="escaneado.html" class="btn btn-neutral float-right" title="Escaneado" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduccion.html" class="btn btn-neutral" title="Introducción" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Mundo Reader S.L..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Calibración &mdash; Horus 0.2 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Horus 0.2 documentation" href="../index.html"/>
+        <link rel="up" title="Bancos de trabajo" href="index.html"/>
+        <link rel="next" title="Escaneado" href="escaneado.html"/>
+        <link rel="prev" title="Ajuste" href="ajuste.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Horus
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../guia-rapida/index.html">Guía rápida</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Bancos de trabajo</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="menu.html">Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="control.html">Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ajuste.html">Ajuste</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Calibración</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ajustes-del-patron">Ajustes del patrón</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auto-comprobacion">Auto-comprobación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibracion-de-los-laseres">Calibración de los láseres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibracion-de-la-plataforma">Calibración de la plataforma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nota-calibracion-de-la-camara-avanzado">Nota: calibración de la cámara (avanzado)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="escaneado.html">Escaneado</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Horus</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Bancos de trabajo</a> &raquo;</li>
+      
+    <li>Calibración</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/bancos-de-trabajo/calibracion.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="calibracion">
+<span id="sec-calibracion"></span><h1>Calibración<a class="headerlink" href="#calibracion" title="Permalink to this headline">¶</a></h1>
+<p>En este banco de trabajo se realizan todos los procesos de calibración del escáner.</p>
+<div class="section" id="ajustes-del-patron">
+<h2>Ajustes del patrón<a class="headerlink" href="#ajustes-del-patron" title="Permalink to this headline">¶</a></h2>
+<p>En esta sección se configuran las características del patrón de calibración. Éstas son:</p>
+<ul class="simple">
+<li>El número de filas y columnas de vértices en el patrón. Por defecto son 6 y 11.</li>
+<li>El ancho del cuadrado en milímetros. Por defecto son 13 mm.</li>
+<li>La distancia al origen del patrón. Es la distancia de la base a la esquina inferior izquierda del patrón. No tiene valor por defecto ya que depende de cómo se haya colocado la pegatina. Es recomendable medirla con un calibre con precisión de 0.1 mm.</li>
+</ul>
+<img alt="../_images/calibration-pattern1.png" src="../_images/calibration-pattern1.png" />
+</div>
+<div class="section" id="auto-comprobacion">
+<h2>Auto-comprobación<a class="headerlink" href="#auto-comprobacion" title="Permalink to this headline">¶</a></h2>
+<p>En esta sección se ejecuta el proceso de auto comprobación en el que se detecta si el patrón, el motor y los láseres están configurados correctamente.</p>
+<p>El patrón se debe colocar como se indica en la figura. Si la auto comprobación finaliza con éxito, el patrón se colocará perpendicular a la cámara.</p>
+<img alt="../_images/calibration-autocheck1.png" src="../_images/calibration-autocheck1.png" />
+</div>
+<div class="section" id="calibracion-de-los-laseres">
+<h2>Calibración de los láseres<a class="headerlink" href="#calibracion-de-los-laseres" title="Permalink to this headline">¶</a></h2>
+<p>En esta sección se determinan los planos que forman cada uno de los láseres con respecto al centro óptico de la cámara. Cada plano se define mediante la normal del plano y la distancia mínima al origen de coordenadas.</p>
+<p>Para comenzar la calibración hay que colocar el patrón perpendicular a la cámara, tal y como se muestra en la figura. En cualquier momento se puede cancelar la calibración y el patrón se colocará en su posición inicial.</p>
+<img alt="../_images/calibration-laser1.png" src="../_images/calibration-laser1.png" />
+<p>Finalmente se muestra el resultado de forma numérica y representado en 3D. Adjunto a cada plano se representa la dispersión de los puntos capturados durante la calibración. Éste valor debe ser menor que 0.1 mm. Se puede Aceptar o Rechazar el resultado de la calibración.</p>
+<img alt="../_images/calibration-laser-result1.png" src="../_images/calibration-laser-result1.png" />
+</div>
+<div class="section" id="calibracion-de-la-plataforma">
+<h2>Calibración de la plataforma<a class="headerlink" href="#calibracion-de-la-plataforma" title="Permalink to this headline">¶</a></h2>
+<p>En esta sección se determina la matriz de transformación homogénea del centro de rotación de la plataforma giratoria con respecto al centro óptico de la cámara. Esto consiste en una matriz de rotación y un vector de traslación en unidades de milímetros.</p>
+<p>Para comenzar la calibración hay que colocar el patrón perpendicular a la cámara, tal y como se muestra en la figura. En cualquier momento se puede cancelar la calibración y el patrón se colocará en su posición inicial.</p>
+<img alt="../_images/calibration-platform1.png" src="../_images/calibration-platform1.png" />
+<p>Finalmente se muestra el resultado de forma numérica y representado en 3D. Adjunto a cada plano se representa la dispersión de los puntos capturados durante la calibración. Se puede Aceptar o Rechazar el resultado de la calibración.</p>
+<img alt="../_images/calibration-platform-result1.png" src="../_images/calibration-platform-result1.png" />
+<p>Una vez finalizado este proceso, el escáner ya estará calibrado.</p>
+</div>
+<div class="section" id="nota-calibracion-de-la-camara-avanzado">
+<h2>Nota: calibración de la cámara (avanzado)<a class="headerlink" href="#nota-calibracion-de-la-camara-avanzado" title="Permalink to this headline">¶</a></h2>
+<p>Esta sección es avanzada. Se recomienda utilizar los valores por defecto. Al modificar los valores en esta calibración es preciso realizar las posteriores calibraciones.</p>
+<p>Para ejecutar esta calibración se captura el patrón en distintas posiciones con la tecla &#8220;espacio&#8221;. Al completar todas las capturas se procede a la calibración de forma automática. En cualquier momento se pueden resetear las capturas tomadas anteriormente.</p>
+<img alt="../_images/calibration-intrinsics1.png" src="../_images/calibration-intrinsics1.png" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="escaneado.html" class="btn btn-neutral float-right" title="Escaneado" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ajuste.html" class="btn btn-neutral" title="Ajuste" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Mundo Reader S.L..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

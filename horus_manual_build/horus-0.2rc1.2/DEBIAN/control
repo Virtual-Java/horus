@@ -1,0 +1,9 @@
+Package: horus
+Version: 0.2rc1.2-xenial1
+Architecture: arm64
+Maintainer: Jesús Arroyo Torrens <jesus.arroyo@bq.com>
+Installed-Size: 9
+Depends: python2, pyserial, python-wxgtk2.8 | python-wxgtk3.0, python-opengl, python-pyglet, python-numpy, python-scipy, python-matplotlib, python-opencv, avrdude, libftdi1, v4l-utils
+Section: misc
+Priority: optional
+Description: Horus is a full software solution for 3D scanning
